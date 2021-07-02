@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imagens/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+#logo {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#logo img {
+    width: 170px;
+}
+
+#cadastro {
+    margin: 0 auto;
+    margin-top: 7%;
+    background-color: white;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 50px;
+    transition: 400ms;
+}
+
+#icone {
+    margin-top: 0px;
+    margin-bottom: 3px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 100px;
+}
+
+form {
+    margin: 10px;
+    text-align: center;
+}
+
+form input {
+    margin: 35px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.textsize {
+    width: 300px;
+    height: 40px;
+    margin: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(172, 172, 172);
+    transition: 1s;
+}
+
+.textsize::placeholder {
+    font-size: 16px;
+}
+
+.textsize:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+#entrar {
+    border: none;
+    width: 260px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 700ms;
+    font-weight: bold;
+    margin-bottom: 0px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.582);
+}
+
+#entrar:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+#links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 600ms;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+#links a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 12, 12);
+}
