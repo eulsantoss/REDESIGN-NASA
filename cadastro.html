@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="rodapecima">
+        <div id="formpage">
+            <span>Crie uma conta <a href="cadastro.html">Clicando aqui.</a></span> <span>Já possui uma conta? <a href="login.html">Fazer login.</a></span>
+        </div>
+    </div>
+    <div id="logo">
+        <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+    </div>
+    <div id="corpo">
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="espaçonaves.html">Espaço-naves</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Quem somos</a></li>
+            </ul>
+        </div>
+        <div id="cadastro">
+            <img id="icone" src="imagens/icon.png" alt="">
+            <form>
+                <input type="text" name="nome" id="nome" class="textsize" placeholder="Nome completo" required autocomplete="off"><br>
+                <input type="text" name="usuario" id="usuario" class="textsize" placeholder="Usuário" required autocomplete="off"><br>
+                <input type="password" name="senha" id="senha" class="textsize" placeholder="Senha" required autocomplete="off"><br>
+                <input type="text" name="senhaconfirma" id="senhaconfirma" class="textsize" placeholder="Confirme a Senha" required autocomplete="off"><br>
+                <input type="email" name="email" id="email" class="textsize" placeholder="E-mail" required autocomplete="off"><br>
+                <input type="checkbox" name="termos" id="termos" class="verificar"><label for="termos">Confirmo que li e aceito os <a href="">Termos de Uso</a></label><br>
+                <input type="checkbox" name="privacidade" id="privacidade" class="verificar"><label for="privacidade">Confirmo que li e aceito a <a href="">Política de Privacidade</a></label><br>
+                <input type="checkbox" name="idade" id="idade" class="verificar"><label for="idade">Confirmo ter 18 anos ou mais</label><br>
+                <input type="submit" id="entrar" value="Criar"><br><br>
+            </form>
+            <a id="conta" href="login.html">Já possuo minha conta!</a>
+        </div>
+        <div id="rodape">
+            <span>© Todos os Direitos Reservados - NASA</span>
+        </div>
+    </div>
+</body>
+</html>

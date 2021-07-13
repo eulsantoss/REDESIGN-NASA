@@ -4,25 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilização de Formulário</title>
+    <title>NASA - Início</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="rodapecima">
+        <div id="formpage">
+            <span>Crie uma conta <a href="cadastro.html">Clicando aqui.</a></span> <span>Já possui uma conta? <a href="login.html">Fazer login.</a></span>
+        </div>
+    </div>
     <div id="logo">
-        <img src="imagens/logo.png" alt="">
+        <a href="index.html"><img src="imagens/logo.png" alt=""></a>
     </div>
     <div id="corpo">
-        <div id="cadastro">
-            <img id="icone" src="imagens/icon.png" alt="">
-            <form>
-                <input type="text" name="usuario" id="usuario" class="textsize" placeholder="Usuário" required autocomplete="off"><br>
-                <input type="password" name="senha" id="senha" class="textsize" placeholder="Senha" required autocomplete="off"><br>
-                <input type="submit" id="entrar" value="Entrar">
-            </form><br>
-            <div id="links">
-                <a href="">Esqueci minha senha</a><br>
-                <a href="">Criar conta</a>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="espaçonaves.html">Espaço-naves</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Quem somos</a></li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <div id="coluna1">
+                <a href="">
+                    <div class="noticia">
+                        <div class="foto">
+                            <img src="imagens/foguete.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Lançamento do ZX588-P</h3>
+                            <p class="data">05/07/2021</p>
+                            <p class="texto">Nesta última segunda-feira (05) nossa equipe interna liderou o ranking de live com mais telespectadores em um curto período de duração após transmitir ao vivo para todo o mundo o lançamento do foguete ZX588-P, que irá em direção à Urano com previsão de chegada em 10 anos e 2 meses, batendo o recorde mundial de viagem planetária mais rápida de todos os tempos. </p>
+                        </div>
+                    </div>
+                </a><br><br>
+
+                <a href="">
+                    <div class="noticia">
+                        <div class="foto">
+                            <img src="imagens/planeta.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Novas problemáticas no planeta Terra</h3>
+                            <p class="data">02/07/2021</p>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta deserunt a nulla? Iste, asperiores cumque ipsa eaque non, quasi ullam, magni totam ducimus veritatis rerum fuga aperiam expedita porro molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ab dolorem? Dolores consequuntur nulla assumenda suscipit, eaque saepe maxime porro voluptatum ipsum recusandae corporis cumque repudiandae, expedita molestias asperiores ullam?</p>
+                        </div>
+                    </div>
+                </a>
             </div>
+
+            <div id="coluna2">
+                <a href="">
+                    <div class="noticia">
+                        <div class="foto">
+                            <img src="imagens/fogueteicon.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Construção do P44MN rumo à órbita do planeta Terra</h3>
+                            <p class="data">03/07/2021</p>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis maiores eum, dicta ullam, amet eos, ab magni rerum veniam reprehenderit minima earum excepturi cumque beatae fugiat repellendus perferendis molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat, totam molestiae expedita quasi nesciunt natus quisquam repellendus, porro ipsam odit voluptatem reprehenderit quidem?
+                            </p>
+                        </div>
+                    </div>
+                </a><br><br>
+
+                <a href="">
+                    <div class="noticia">
+                        <div class="foto">
+                            <img src="imagens/sistemasolar.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>A área inexplorada do Sistema Solar</h3>
+                            <p class="data">28/06/2021</p>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, quod. Exercitationem, labore! Corporis officia alias corrupti dignissimos magnam molestiae blanditiis omnis recusandae culpa minima ea minus necessitatibus exercitationem, nesciunt voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cupiditate aspernatur dicta praesentium optio alias amet, non fugiat illo impedit soluta neque dolorem sequi quidem natus atque iste pariatur aliquam.</p>
+                        </div>
+                    </div>
+                </a><br><br>
+            </div>
+        </div>
+        <div id="conteudoabaixo">
+            <div id="postagem">
+                <h1>Projetos Futuros</h1>
+                <p>Para antes do início de 2026, planejamos já ter explorado um raio de 200km em volta do eixo do planeta terra no espaço. O Físico e Astrônomo <a href="">Lucian Lewis</a> foi quem calculou essa estimativa, considerando as novas tecnologias que surgirão dentro de aproximadamente 1 ano e meio dentro de nossa agência. Lewis acredita que seja possível até ultrapassar esse espaço de exploração, porém, confirma um número matematicamente possível para garantir uma estimativa segura e alcançável. </p>
+                <p>Veja abaixo o foguete que foi lançado este ano (2021) e tem previsão de retorno para 2026, o P44MN:</p>
+                <img src="imagens/foguete2.jpg" alt="">
+                <p id="resize">Foto via: <a href="">Adam Thorn</a></p>
+            </div>
+        </div>
+        <div id="rodape">
+            <span>© Todos os Direitos Reservados - NASA</span>
         </div>
     </div>
 </body>

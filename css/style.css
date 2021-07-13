@@ -4,12 +4,59 @@
 }
 
 body {
-    background-image: url(../imagens/background.jpg);
+    /*background-image: url(../imagens/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-repeat: repeat-y;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     font-family: sans-serif;
+    background-color: rgb(9, 31, 51);
+
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    z-index: -2;
+}
+
+#rodapecima {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+#formpage {
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#formpage span {
+    margin: 0px 3px;
+}
+
+#formpage a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 2px 6px;
+    border-radius: 5px;
+    transition: 400ms;
+}
+
+#formpage a:hover {
+    background-color: black;
+    color: white;
 }
 
 #logo {
@@ -21,18 +68,52 @@ body {
     width: 170px;
 }
 
+#nav {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#nav ul {
+    width: 40%;
+    min-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+#nav ul li a {
+    padding: 8px 12px;
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+    border-radius: 7px;
+    transition: 500ms;
+}
+
+#nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+    
+}
+
 #cadastro {
     margin: 0 auto;
-    margin-top: 7%;
+    margin-top: 4%;
     background-color: white;
     border-radius: 30px;
     width: 400px;
-    height: 500px;
     padding: 15px;
     box-sizing: border-box;
     text-align: center;
     padding-top: 50px;
     transition: 400ms;
+    min-width: 400px;
 }
 
 #icone {
@@ -52,6 +133,16 @@ form input {
     margin: 35px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0);
+}
+
+form input.verificar {
+    margin: 5px;
+    margin-top: 10px;
+    
+}
+
+form label {
+    font-size: 14px;
 }
 
 .textsize {
@@ -108,4 +199,231 @@ form input {
 #links a:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(12, 12, 12);
+}
+
+@media(max-width: 800px) {
+    #logo, #nav, #cadastro{
+        width: 60%;
+        margin: 10%;
+    }
+
+    #nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -45%;
+    }
+}
+
+#rodape {
+    margin-top: 15%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+#rodape span {
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+}
+
+a#conta {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 600ms;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+a#conta:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 12, 12);
+}
+
+/* Área do index.html */
+
+#conteudo {
+    width: 77%;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 3%;
+}
+
+#conteudo a {
+    text-decoration: none;
+}
+
+#conteudo #coluna1 {
+    float: left;
+}
+
+
+#conteudo #coluna2 {
+    float: right;
+}
+
+
+.noticia {
+    width: 700px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: auto;
+    transition: 400ms;
+}
+
+.noticia .foto {
+    float: left;
+    margin-right: 15px;
+}
+
+.noticia .foto img {
+    width: 250px;
+    height: 250px;
+    padding: 4px 4px 0px 4px;
+    border-radius: 15px;
+    
+}
+
+.info {
+    width: 690px;
+    margin: 10px;
+}
+
+.info h3 {
+    color: black;
+    font-size: 21px;
+
+}
+
+.info p.data {
+    color: black;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.info p.texto {
+    margin: 15px;
+    color: black;
+}
+
+#conteudoabaixo {
+    width: 77%;
+    margin: 0 auto;
+    clear: both;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#postagem h1 {
+    margin: 10px;
+}
+
+#postagem p {
+    margin: 10px;
+}
+
+#postagem img {
+    width: 90%;
+    margin: 10px 10px 0px 10px;
+}
+
+p#resize {
+    margin: 0 10px;
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+}
+
+p#resize a {
+    color: rgb(99, 99, 99);
+}
+
+p#resize a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#coluna1 a .noticia:hover, #coluna2 a .noticia:hover{
+    background-color: rgb(199, 199, 199);
+    
+}
+
+/*Espaço-naves.html Abaixo:*/
+
+#area-completa {
+    width: 77%;
+    min-width: 1170px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#esquerda {
+    float: left;
+    width: 75%;
+    min-width: 900px;
+    margin-top: 3%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+#direita {
+    float: right;
+    width: 22%;
+    min-width: 250px;
+    margin-top: 3%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: auto;
+}
+
+#esquerda h1, #esquerda h2, #direita h2 {
+    font-size: 28px;
+}
+
+#esquerda p {
+    margin: 10px 0px;
+}
+
+#direita img {
+    width: 90%;
+    margin-top: 1%;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+#direita a {
+    text-decoration: none;
+    color: black;
+}
+
+#direita .naves {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 400ms;
+}
+
+#direita .naves:hover {
+    background-color: rgb(221, 221, 221);
+    transition: 400ms;
+}
+
+.fonte {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(126, 126, 126);
+    font-style: italic;
 }
